@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 2 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 3 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -14,7 +14,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | --- | --- | --- |
 | 1 | 2023-01-09T12:56:35+05:30 | Establish module imports, constants and repository hygiene (present) |
 | 2 | 2023-01-23T13:03:26+05:30 | Decode interleaved little-endian PCM16 samples (present) |
-| 3 | 2023-06-28T10:39:45+05:30 | Encode normalized samples with explicit clipping policy (later stage) |
+| 3 | 2023-06-28T10:39:45+05:30 | Encode normalized samples with explicit clipping policy (present) |
 | 4 | 2023-07-02T12:06:09+05:30 | Add synthetic fixtures for the documented example (later stage) |
 | 5 | 2023-09-24T11:05:21+05:30 | Expose the command-line interface and default demonstration (later stage) |
 | 6 | 2023-12-04T17:40:13+05:30 | Cover known bytes and establish the test harness (later stage) |

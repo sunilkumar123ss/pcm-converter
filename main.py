@@ -31,3 +31,17 @@ def encode_pcm16(frames, channels=1, clip=False):
             integer = max(-32768, min(32767, round(value * 32768)))
             output.extend(struct.pack('<h', integer))
     return bytes(output)
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input', type=Path, help='Raw signed16-bit little-endian PCM to decode')
+    parser.add_argument('--channels', type=int, default=1)
+    args = parser.parse_args()
+    try:
+        data = args.input.read_bytes() if args.input else encode_pcm16([[-1], [0], [0.5], [1]])
+        frames = decode_pcm16(data, args.channels)
+        print(json.dumps({'format': 'signed PCM16 little-endian', 'frame_count': len(frames), 'frames': frames}, indent=2))
+    except (ValueError, OSError) as exc:
+        parser.error(str(exc))
+if __name__ == '__main__':
+    main()

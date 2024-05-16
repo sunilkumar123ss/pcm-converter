@@ -13,3 +13,8 @@ class PcmTests(unittest.TestCase):
     def test_stereo_roundtrip(self):
         frames = [[-0.5, 0.5], [0, 0.25]]
         self.assertEqual(decode_pcm16(encode_pcm16(frames, 2), 2), frames)
+
+    def test_clipping_is_explicit(self):
+        with self.assertRaises(ValueError):
+            encode_pcm16([[2]])
+        self.assertEqual(encode_pcm16([[2]], clip=True), b'\xff\x7f')

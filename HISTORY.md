@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 8 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 9 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -20,7 +20,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 6 | 2023-12-04T17:40:13+05:30 | Cover known bytes and establish the test harness (present) |
 | 7 | 2023-12-06T18:49:05+05:30 | Cover stereo roundtrip (present) |
 | 8 | 2024-05-16T16:58:26+05:30 | Cover clipping is explicit (present) |
-| 9 | 2025-01-22T19:49:40+05:30 | Cover invalid (later stage) |
+| 9 | 2025-01-22T19:49:40+05:30 | Cover invalid (present) |
 | 10 | 2025-02-22T10:29:30+05:30 | Cover empty (later stage) |
 | 11 | 2025-10-28T16:39:04+05:30 | Describe package metadata and default verification arguments (later stage) |
 | 12 | 2026-01-06T14:59:50+05:30 | Add the isolated test, demo and help verifier (later stage) |

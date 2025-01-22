@@ -18,3 +18,11 @@ class PcmTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             encode_pcm16([[2]])
         self.assertEqual(encode_pcm16([[2]], clip=True), b'\xff\x7f')
+
+    def test_invalid(self):
+        for (data, channels) in [(b'a', 1), (b'\x00\x00', 2), (b'', 0), (b'', True)]:
+            with self.assertRaises(ValueError):
+                decode_pcm16(data, channels)
+        for frames in [[[float('inf')]], [[True]], [[0, 1]], 'bad']:
+            with self.assertRaises(ValueError):
+                encode_pcm16(frames)

@@ -26,3 +26,8 @@ class PcmTests(unittest.TestCase):
         for frames in [[[float('inf')]], [[True]], [[0, 1]], 'bad']:
             with self.assertRaises(ValueError):
                 encode_pcm16(frames)
+
+    def test_empty(self):
+        self.assertEqual(decode_pcm16(b''), [])
+if __name__ == '__main__':
+    unittest.main()

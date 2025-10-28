@@ -1,0 +1,8 @@
+{
+  "slug": "pcm-converter",
+  "title": "PCM16 Codec Utility",
+  "description": "Convert normalized interleaved frames to signed PCM16 little-endian bytes and decode them back.",
+  "category": "voice",
+  "demo_args": [],
+  "expected_exit": 0
+}

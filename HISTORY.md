@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 11 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 12 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -23,6 +23,6 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 9 | 2025-01-22T19:49:40+05:30 | Cover invalid (present) |
 | 10 | 2025-02-22T10:29:30+05:30 | Cover empty (present) |
 | 11 | 2025-10-28T16:39:04+05:30 | Describe package metadata and default verification arguments (present) |
-| 12 | 2026-01-06T14:59:50+05:30 | Add the isolated test, demo and help verifier (later stage) |
+| 12 | 2026-01-06T14:59:50+05:30 | Add the isolated test, demo and help verifier (present) |
 | 13 | 2026-02-05T12:54:46+05:30 | Run the repository verifier in continuous integration (later stage) |
 | 14 | 2026-05-15T10:22:07+05:30 | Document usage, limitations and the disclosed reconstructed timeline (later stage) |
